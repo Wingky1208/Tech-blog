@@ -3,11 +3,15 @@
     <div class="card">
         <div class="card-header flex-row justify-space-between">
             <h2>
-                <a href="/post/{{id}}">{{title}}</a>
+                <a href="/post/{{id}}">{{postTitle}}</a>
             </h2>
-            <div>
-                Posted by {{user.username}} on {{format_date createdAt}}
-            </div>
+        </div>
+        <div>
+            {{postContent}}
+        </div>
+        <div>
+            Posted by {{user.username}} on {{format_date createdAt}}
+
         </div>
         <div class="card-body">
             {{body}}

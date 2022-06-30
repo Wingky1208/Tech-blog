@@ -1,14 +1,25 @@
 const { Sequelize, Model, DataTypes } = require('sequelize');
 
-const sequelize = require('../config/connection');
+const sequelize = require('../config/config');
+
+class Post extends Model { };
 
 Post.init(
     {
-        title: DataTypes.STRING,
-        boday: DataTypes.STRING
+        postTitle: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true,
+        },
+        postContent: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true,
+        },
+
     },
     {
-        sequelize
+        sequelize,
     }
 );
 

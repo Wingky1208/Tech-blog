@@ -17,9 +17,14 @@
     <h1 class="app-title"><a href="/">Wingky's Tech Blog</a></h1>
     <nav class="navbar">
       <ul>
+        {{#if loggedIn}}
         <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-        <li class="li-inline nav-item"><a href="/login">Login</a></li>
         <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+
+        {{else}}
+        <li class="li-inline nav-item"><a href="/login">Login</a></li>
+
+        {{/if}}
       </ul>
     </nav>
   </header>
@@ -35,4 +40,6 @@
 </body>
 
 </html>
+{{#if loggedIn}}
 <script src="/js/logout.js"></script>
+{{/if}}

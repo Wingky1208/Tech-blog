@@ -1,0 +1,16 @@
+<div class="posts list-group">
+    {{#each posts}}
+    <div class="card">
+        <div class="card-header flex-row justify-space-between">
+            <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+                <h2>{{postTitle}}</h2>
+                <div>{{postContent}}</div>
+
+                <div>{{format_date createdAt}}</div>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<a href="/dashboard/new"><button type="button" class="btn">Create new post</button></a>

@@ -1,36 +1,38 @@
 <div class="post">
     <div class="card">
         <div class="card-header jusify-space-between">
-            <h2>{{post.title}}</h2>
+            <a href="/post/{{post.id}}"></a>
+            <h2>{{post.postTitle}}</h2>
             <div>
                 Posted by {{post.user.username}} on {{format_date post.createdAt}}
             </div>
         </div>
         <div class="card-body">
-            {{post.body}}
+            {{post.postContent}}
         </div>
     </div>
 
+
     {{#if post.Comments}}
-    <section class="card">
+    <section>
         <div class="card-header">
             <h3>Comments</h3>
         </div>
+        {{#each post.Comments}}
 
-        <div class="card-body">
-            {{#each post.Comments}}
-            <div>
-                <p>
-                    {{body}}
-                </p>
-                <p>
-                    &mdash; {{User.username}}, {{format_date createdAt}}
-                </p>
-            </div>
-            {{/each}}
+        <div>
+            <p>{{commentContent}}</p>
+            <p>
+                &mdash; {{user.username}}, {{format_date createdAt}}
+            </p>
         </div>
+        {{/each}}
+
     </section>
+
     {{/if}}
+
+
 
     <form id="new-comment-form" class="card">
         <div class="card-header">

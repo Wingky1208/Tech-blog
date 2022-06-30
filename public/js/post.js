@@ -7,8 +7,8 @@ const newPostHandler = async (event) => {
     await fetch(`/api/post`, {
         method: "POST",
         body: JSON.stringify({
-            title,
-            body
+            postTitle: title,
+            postContent: body
         }),
         headers: {
             "Content-Type": "application/json",
