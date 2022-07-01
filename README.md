@@ -7,6 +7,8 @@
  https://github.com/Wingky1208/Tech-blog.git
 
  ## Heroku link
+ http://tech-blog-128.herokuapp.com/
+ 
  
   ## Description 📝
   A CMS-style blog application with the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
@@ -21,8 +23,12 @@
 
 ## Screenshot 🔎
 
+![Screen Shot 2022-06-30 at 11 20 07 PM](https://user-images.githubusercontent.com/100000900/176817265-2b794a4a-69a8-4ced-b9c0-9ea766dd27ab.png)
 
 
+![Screen Shot 2022-06-30 at 11 25 23 PM](https://user-images.githubusercontent.com/100000900/176817519-2b76631c-bbdf-463a-8b7d-efec1c1d50bc.png)
+
+![Screen Shot 2022-06-30 at 11 26 23 PM](https://user-images.githubusercontent.com/100000900/176817629-2aaf9434-43e4-4eff-805f-8240439250f5.png)
 
 
 ## Usage 💻
